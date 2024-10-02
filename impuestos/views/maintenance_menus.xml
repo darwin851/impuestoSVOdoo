@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="menu_reporte_impuestos_sv" name="Reportes de Impuestos SV"
+                  parent="account.menu_finance_reports" sequence="200"/>
+
+        <menuitem id="f1_iva_menu" name="F1 IVA" parent="menu_reporte_impuestos_sv"
+                  action="f1_iva_action" sequence="10"/>
+
+        <menuitem id="f2_renta_menu" name="F2 Renta" parent="menu_reporte_impuestos_sv"
+                  action="f2_renta_action" sequence="20"/>
+
+        <menuitem id="libro_iva_compras_menu" name="Libro de IVA Compras" parent="menu_reporte_impuestos_sv"
+                  action="libro_iva_compras_action" sequence="30"/>
+
+        <menuitem id="libro_iva_ventas_menu" name="Libro de IVA Ventas" parent="menu_reporte_impuestos_sv"
+                  action="libro_iva_ventas_action" sequence="40"/>
+
+    </data>
+</odoo>

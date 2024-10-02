@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="f2_renta_tree_view" model="ir.ui.view">
+            <field name="name">f2.renta.tree</field>
+            <field name="model">f2.renta</field>
+            <field name="arch" type="xml">
+                <tree string="F2 Renta">
+                    <field name="name"/>
+                    <field name="fecha_inicio"/>
+                    <field name="fecha_fin"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="f2_renta_form_view" model="ir.ui.view">
+            <field name="name">f2.renta.form</field>
+            <field name="model">f2.renta</field>
+            <field name="arch" type="xml">
+                <form string="F2 Renta">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="company_id" options="{'no_create': True}"/>
+                            <field name="fecha_inicio"/>
+                            <field name="fecha_fin"/>
+                        </group>
+                        <field name="f2_renta_line_ids">
+                            <tree editable="bottom">
+                                <field name="nit"/>
+                                <field name="ventas_no_sujetas"/>
+                                <field name="ventas_gravadas_renta"/>
+                                <field name="renta_retenida"/>
+                                <field name="total"/>
+                            </tree>
+                        </field>
+                        <footer>
+                            <button name="generar_reporte" string="Generar Reporte" type="object" class="btn-primary"/>
+                            <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="f2_renta_action" model="ir.actions.act_window">
+            <field name="name">F2 Renta</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">f2.renta</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

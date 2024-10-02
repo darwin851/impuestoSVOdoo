@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="f2_renta_wizard_view" model="ir.ui.view">
+            <field name="name">f2.renta.form</field>
+            <field name="model">f2.renta</field>
+            <field name="arch" type="xml">
+                <form string="Generar F2 Renta">
+                    <group>
+                        <field name="fecha_inicio"/>
+                        <field name="fecha_fin"/>
+                    </group>
+                    <footer>
+                        <button name="generar_reporte" string="Generar" type="object" class="btn-primary"/>
+                        <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

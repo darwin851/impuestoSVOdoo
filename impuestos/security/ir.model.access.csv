@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_f1_iva,access.f1.iva,model_f1_iva,,1,1,1,1
+access_f1_iva_line,access.f1.iva.line,model_f1_iva_line,,1,1,1,1
+access_f2_renta,access.f2.renta,model_f2_renta,,1,1,1,1
+access_f2_renta_line,access.f2.renta.line,model_f2_renta_line,,1,1,1,1
+access_libro_iva_compras,access.libro.iva.compras,model_libro_iva_compras,,1,1,1,1
+access_libro_iva_ventas,access.libro.iva.ventas,model_libro_iva_ventas,,1,1,1,1
+access_libro_iva_compras_line,access.libro.iva.compras.line,model_libro_iva_compras_line,,1,1,1,1
+access_libro_iva_ventas_line,access.libro.iva.ventas.line,model_libro_iva_ventas_line,,1,1,1,1
